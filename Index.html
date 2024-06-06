@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments Website</title>
+    <link rel="stylesheet" href="Style.css">
+ 
+</head>
+<body>
+    <header>
+        <h1>MUSICAL INSTRUMENTS</h1>
+        
+      
+    </header>
+
+    <main>
+        <p>
+            <img src="instruments.jpg" style="float:left; width:425px;height: 350px;"/>
+        </p>
+        <div class="Imtroduction">
+            <h2>About musical instruments</h2>
+            <p>Music is an essential part of human culture and musical instruments have been used for centuries to create beautiful melodies and rhythms. From the soothing strumming of a guitar to the majestic sound of a grand piano, each intrument has its own unique characteristics and history.</p>
+            <p>This website aims to provide information about various musical instruments including their origins, features and popular brands. Whether you're a seasoned musician or just starting your journey, we hope you find this resource helpful and inspiring.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="signup.html">Sign Up</a></li><br />
+                <li><a href="login.html">Login</a></li><br />
+            </ul>
+        </nav>
+        <section id="instrument-selection">
+            <h2>Select an Instrument</h2>
+            <ul>
+                <li><a href="guitar.html">Guitar</a></li>
+                <li><a href="piano.html">Piano</a></li>
+                <li><a href="drums.html">Drums</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Musical Instruments Website</p>
+    </footer>
+    <script>
+        var isLoggedIn=false;
+        function
+    toggleInstrumentselection(){
+        var instrumentSelection = document.getElementById("instrument-selection");
+        if (isLoggedIn){
+            instrumentSelection.style.display="block";
+        }else{
+            instrumentSelection.style.display="none";
+        }
+    }
+    </script>
+</body>
+</html>
